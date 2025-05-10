@@ -11,271 +11,31 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <style>
-      /* CSS Khusus Halaman Tentang Kami */
-      .about-hero {
-        background: linear-gradient(
-            135deg,
-            rgba(255, 82, 59, 0.8) 0%,
-            rgba(255, 124, 71, 0.8) 100%
-          ),
-          url("images/about-bg.jpg") center/cover no-repeat;
-        color: white;
-        padding: 120px 0;
-        text-align: center;
-        margin-bottom: 60px;
-      }
-
-      .about-hero h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-        font-weight: 700;
-      }
-
-      .about-hero p {
-        font-size: 1.2rem;
-        max-width: 700px;
-        margin: 0 auto;
-      }
-
-      .section-title {
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-      }
-
-      .section-title h2 {
-        display: inline-block;
-        font-size: 2rem;
-        color: #333;
-        padding-bottom: 15px;
-      }
-
-      .section-title h2:after {
-        content: "";
-        position: absolute;
-        width: 80px;
-        height: 3px;
-        background-color: #ff523b;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-      }
-
-      .about-content {
-        padding: 0 15px;
-        max-width: 1200px;
-        margin: 0 auto 80px;
-      }
-
-      .about-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
-        align-items: center;
-        margin-bottom: 80px;
-      }
-
-      .about-img {
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      }
-
-      .about-img img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: transform 0.5s;
-      }
-
-      .about-img:hover img {
-        transform: scale(1.05);
-      }
-
-      .mission-vision {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-        margin: 60px 0;
-      }
-
-      .mission-card,
-      .vision-card {
-        background: white;
-        padding: 40px 30px;
-        border-radius: 10px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-        border-top: 4px solid #ff523b;
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-
-      .mission-card:hover,
-      .vision-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(255, 82, 59, 0.1);
-      }
-
-      .mission-card h3,
-      .vision-card h3 {
-        color: #ff523b;
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-      }
-
-      .mission-card h3 i,
-      .vision-card h3 i {
-        margin-right: 15px;
-        font-size: 1.8rem;
-      }
-
-      .values-section {
-        background: #fff9f8;
-        padding: 80px 0;
-        margin: 80px 0;
-      }
-
-      .values-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-      }
-
-      .value-card {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s;
-      }
-
-      .value-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(255, 82, 59, 0.1);
-        border-top: 3px solid #ff523b;
-      }
-
-      .value-card i {
-        font-size: 2.5rem;
-        color: #ff523b;
-        margin-bottom: 20px;
-        background: rgba(255, 82, 59, 0.1);
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
-        border-radius: 50%;
-        display: inline-block;
-      }
-
-      .value-card h4 {
-        font-size: 1.2rem;
-        margin-bottom: 15px;
-        color: #333;
-      }
-
-      .team-section {
-        max-width: 1200px;
-        margin: 0 auto 80px;
-        padding: 0 15px;
-      }
-
-      .team-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 30px;
-        margin-top: 50px;
-      }
-
-      .team-card {
-        background: white;
-        padding: 30px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-        transition: all 0.3s;
-      }
-
-      .team-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(255, 82, 59, 0.1);
-      }
-
-      .team-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 0 auto 20px;
-        border: 5px solid rgba(255, 82, 59, 0.2);
-        transition: all 0.3s;
-      }
-
-      .team-card:hover .team-img {
-        border-color: #ff523b;
-      }
-
-      .team-card h4 {
-        font-size: 1.2rem;
-        margin-bottom: 5px;
-        color: #333;
-      }
-
-      .team-card p {
-        color: #ff523b;
-        font-weight: 500;
-      }
-
-      @media (max-width: 768px) {
-        .about-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .mission-vision {
-          grid-template-columns: 1fr;
-        }
-
-        .about-hero {
-          padding: 80px 0;
-        }
-
-        .about-hero h1 {
-          font-size: 2rem;
-        }
-      }
-    </style>
   </head>
   <body>
-    <!-- Navbar -->
-    <div class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html"
-              ><img src="images/logo.png" alt="logo" width="125px"
-            /></a>
-          </div>
-          <nav>
-            <ul id="MenuItems">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Produk</a></li>
-              <li><a href="about.html">Tentang Kami</a></li>
-              <li><a href="contact.html">Kontak</a></li>
-              <li><a href="account.html">Akun</a></li>
-            </ul>
-          </nav>
-          <a href="cart.html"
-            ><img src="images/cart.png" width="30px" height="30px"
+    <!-- Navbar Minimalis -->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="logo" width="125px"
           /></a>
-          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produk</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+            <li><a href="account.html">Akun</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
     </div>
 
@@ -284,66 +44,61 @@
       <div class="container">
         <h1>Tentang YOI Store</h1>
         <p>
-          Sejak 2015, kami berkomitmen untuk menyediakan peralatan olahraga
-          berkualitas dengan desain stylish dan harga terjangkau
+          Menghadirkan gaya hidup aktif dengan produk berkualitas sejak 2015
         </p>
       </div>
     </section>
 
-    <!-- Tentang Kami Section -->
-    <section class="about-content">
-      <div class="section-title">
-        <h2>Cerita Kami</h2>
-      </div>
+    <!-- About Section -->
+    <section class="section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Cerita Kami</h3>
+            <p>
+              YOI Store didirikan pada tahun 2015 dengan misi sederhana:
+              menyediakan peralatan olahraga dan pakaian berkualitas tinggi
+              dengan harga yang terjangkau. Apa yang dimulai sebagai toko kecil
+              di Jakarta kini telah berkembang menjadi destinasi utama bagi para
+              pecinta gaya hidup sehat di seluruh Indonesia.
+            </p>
+            <p>
+              Kami percaya bahwa olahraga seharusnya bisa dinikmati oleh semua
+              orang, tanpa terkecuali. Itulah mengapa kami berkomitmen untuk
+              menawarkan produk-produk yang tidak hanya fungsional tetapi juga
+              stylish, sehingga Anda bisa merasa percaya diri baik di dalam
+              maupun di luar gym.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/about-story.jpg" alt="Sejarah YOI Store" />
+          </div>
+        </div>
 
-      <div class="about-grid">
-        <div>
-          <h3>Perjalanan YOI Store</h3>
-          <p>
-            YOI Store dimulai dari sebuah toko kecil di Jakarta dengan passion
-            untuk membantu masyarakat hidup lebih sehat. Pendiri kami, Andi
-            Wijaya, seorang pecinta fitness, melihat kebutuhan akan peralatan
-            olahraga berkualitas dengan harga yang wajar.
-          </p>
-          <p>
-            Dalam perjalanan 8 tahun, kami telah berkembang menjadi salah satu
-            retailer peralatan olahraga terpercaya di Indonesia, melayani ribuan
-            pelanggan dari berbagai kota.
-          </p>
-          <p>
-            Kami bangga telah membantu menciptakan komunitas fitness yang solid
-            melalui produk-produk berkualitas dan berbagai event olahraga yang
-            kami sponsori.
-          </p>
-        </div>
-        <div class="about-img">
-          <img src="images/about-story.jpg" alt="Sejarah YOI Store" />
-        </div>
-      </div>
-
-      <div class="mission-vision">
-        <div class="mission-card">
-          <h3><i class="fa fa-bullseye"></i> Misi Kami</h3>
-          <p>
-            Memberikan produk olahraga berkualitas tinggi dengan harga
-            terjangkau untuk mendorong gaya hidup aktif dan sehat. Kami
-            berkomitmen untuk terus berinovasi dalam desain dan fungsionalitas
-            produk.
-          </p>
-        </div>
-        <div class="vision-card">
-          <h3><i class="fa fa-eye"></i> Visi Kami</h3>
-          <p>
-            Menjadi destinasi utama peralatan olahraga di Indonesia yang dikenal
-            karena kualitas produk, pelayanan pelanggan yang luar biasa, dan
-            kontribusi positif bagi komunitas fitness nasional.
-          </p>
+        <div class="mv-container">
+          <div class="mv-card">
+            <h3><i class="fas fa-bullseye"></i> Misi Kami</h3>
+            <p>
+              Memberikan produk olahraga berkualitas tinggi dengan harga
+              terjangkau, mendorong lebih banyak orang untuk menjalani gaya
+              hidup aktif dan sehat melalui peralatan yang nyaman, fungsional,
+              dan stylish.
+            </p>
+          </div>
+          <div class="mv-card">
+            <h3><i class="fas fa-eye"></i> Visi Kami</h3>
+            <p>
+              Menjadi retailer peralatan olahraga terdepan di Indonesia yang
+              dikenal karena kualitas produk, pelayanan pelanggan yang luar
+              biasa, dan komitmen terhadap komunitas fitness lokal.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Nilai-Nilai Section -->
-    <section class="values-section">
+    <!-- Values Section -->
+    <section class="section values-section">
       <div class="container">
         <div class="section-title">
           <h2>Nilai-Nilai Kami</h2>
@@ -351,15 +106,19 @@
 
         <div class="values-grid">
           <div class="value-card">
-            <i class="fa fa-heart"></i>
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
             <h4>Passion</h4>
             <p>
-              Kami mencintai apa yang kami lakukan dan berkomitmen untuk
-              memberikan yang terbaik bagi pelanggan kami.
+              Kami mencintai apa yang kami lakukan dan itu terlihat dari setiap
+              produk yang kami tawarkan.
             </p>
           </div>
           <div class="value-card">
-            <i class="fa fa-star"></i>
+            <div class="value-icon">
+              <i class="fas fa-star"></i>
+            </div>
             <h4>Kualitas</h4>
             <p>
               Setiap produk melalui proses seleksi ketat untuk memastikan
@@ -367,15 +126,19 @@
             </p>
           </div>
           <div class="value-card">
-            <i class="fa fa-users"></i>
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
             <h4>Komunitas</h4>
             <p>
-              Kami percaya pada kekuatan komunitas untuk menciptakan perubahan
-              positif dalam gaya hidup sehat.
+              Kami percaya pada kekuatan komunitas untuk menginspirasi perubahan
+              positif.
             </p>
           </div>
           <div class="value-card">
-            <i class="fa fa-lightbulb-o"></i>
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
             <h4>Inovasi</h4>
             <p>
               Terus mencari cara kreatif untuk meningkatkan produk dan layanan
@@ -386,77 +149,95 @@
       </div>
     </section>
 
-    <!-- Tim Kami Section -->
-    <section class="team-section">
-      <div class="section-title">
-        <h2>Tim Kami</h2>
-      </div>
-      <p style="text-align: center; max-width: 800px; margin: 0 auto 30px">
-        Di balik kesuksesan YOI Store, ada tim yang berdedikasi dan penuh
-        semangat yang siap melayani Anda dengan sepenuh hati.
-      </p>
+    <!-- Team Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tim Kami</h2>
+        </div>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px">
+          Di balik YOI Store ada tim yang penuh semangat yang berdedikasi untuk
+          memberikan pengalaman belanja terbaik bagi Anda.
+        </p>
 
-      <div class="team-grid">
-        <div class="team-card">
-          <img src="images/team1.jpg" alt="Andi Wijaya" class="team-img" />
-          <h4>Andi Wijaya</h4>
-          <p>Founder & CEO</p>
-        </div>
-        <div class="team-card">
-          <img src="images/team2.jpg" alt="Sarah Fitriani" class="team-img" />
-          <h4>Sarah Fitriani</h4>
-          <p>CMO</p>
-        </div>
-        <div class="team-card">
-          <img src="images/team3.jpg" alt="Rudi Hermawan" class="team-img" />
-          <h4>Rudi Hermawan</h4>
-          <p>Head of Product</p>
-        </div>
-        <div class="team-card">
-          <img src="images/team4.jpg" alt="Dewi Kartika" class="team-img" />
-          <h4>Dewi Kartika</h4>
-          <p>Customer Service</p>
+        <div class="team-grid">
+          <div class="team-card">
+            <img src="images/team1.jpg" alt="Andi Wijaya" class="team-img" />
+            <h4>Andi Wijaya</h4>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="team-card">
+            <img src="images/team2.jpg" alt="Sarah Fitriani" class="team-img" />
+            <h4>Sarah Fitriani</h4>
+            <p>Chief Marketing Officer</p>
+          </div>
+          <div class="team-card">
+            <img src="images/team3.jpg" alt="Rudi Hermawan" class="team-img" />
+            <h4>Rudi Hermawan</h4>
+            <p>Head of Product</p>
+          </div>
+          <div class="team-card">
+            <img src="images/team4.jpg" alt="Dewi Kartika" class="team-img" />
+            <h4>Dewi Kartika</h4>
+            <p>Customer Service</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="footer-col-2">
-            <img src="images/logo-white.png" />
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo-white.png" alt="YOI Store" />
             <p>
               Menghadirkan solusi olahraga yang elegan, fungsional, dan ekonomis
               bagi setiap kalangan.
             </p>
           </div>
-          <div class="footer-col-4">
-            <h3>Follow Us</h3>
+          <div class="footer-links">
+            <h3>Tautan Cepat</h3>
             <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Ikuti Kami</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
             </ul>
           </div>
         </div>
-        <hr />
-        <p class="copyright">YOI Store &copy; 2023 - All Rights Reserved</p>
+        <div class="copyright">&copy; 2023 YOI Store. All Rights Reserved.</div>
       </div>
-    </div>
+    </footer>
 
-    <!-- javascript -->
+    <!-- Javascript -->
     <script>
-      var MenuItems = document.getElementById("MenuItems");
-      MenuItems.style.maxHeight = "0px";
-      function menutoggle() {
-        if (MenuItems.style.maxHeight == "0px") {
-          MenuItems.style.maxHeight = "200px";
+      // Mobile Menu Toggle
+      const menuIcon = document.querySelector(".menu-icon");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.style.display =
+          navLinks.style.display === "flex" ? "none" : "flex";
+      });
+
+      // Responsive adjustment
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          navLinks.style.display = "flex";
         } else {
-          MenuItems.style.maxHeight = "0px";
+          navLinks.style.display = "none";
         }
-      }
+      });
     </script>
   </body>
 </html>
