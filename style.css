@@ -72,7 +72,7 @@ p{
     background: #563434;
 }
 .header{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: #ffffff;
 }
 .header .row{
     margin-top: 70px;
@@ -135,6 +135,7 @@ h4{
 .col-4:hover{
     transform: translateY(-5px);
 }
+
 /* Penawaran */
 .offer{
     background: radial-gradient(#fff, #ffd6d6);
@@ -147,6 +148,7 @@ h4{
 small{
     color: #555;
 }
+
 /* Footer */
 .footer{
     background: black;
@@ -397,7 +399,6 @@ form a{
     transition: transform 1s;
 }
 
-/*
 /* CSS Reset */
 * {
     margin: 0;
@@ -418,12 +419,16 @@ form a{
     padding: 0 20px;
   }
 
-  /* Navbar Minimalis */
+  /* Navbar */
   .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
 
@@ -491,7 +496,7 @@ form a{
     font-size: 20px;
   }
 
-  /* Hero Section */
+  /* Tentang Kami */
   .about-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url("images/about-bg.jpg") center/cover no-repeat;
@@ -514,7 +519,6 @@ form a{
     opacity: 0.9;
   }
 
-  /* Content Sections */
   .section {
     padding: 80px 0;
   }
@@ -544,7 +548,6 @@ form a{
     transform: translateX(-50%);
   }
 
-  /* About Content */
   .about-content {
     display: flex;
     align-items: center;
@@ -584,7 +587,7 @@ form a{
     transform: scale(1.03);
   }
 
-  /* Mission & Vision */
+  /* Visi Misi */
   .mv-container {
     display: flex;
     gap: 30px;
@@ -618,7 +621,7 @@ form a{
     font-size: 1.8rem;
   }
 
-  /* Values Section */
+  /* Value */
   .values-section {
     background: white;
     padding: 80px 0;
@@ -661,10 +664,10 @@ form a{
     font-weight: 600;
   }
 
-  /* Team Section */
+  /* Tim Kami */
   .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
     gap: 30px;
   }
 
@@ -911,6 +914,7 @@ form a{
         max-width: 700px;
         margin: 0 auto;
         opacity: 0.9;
+        color: rgb(154, 154, 154);
       }
 
       /* Contact Section */
