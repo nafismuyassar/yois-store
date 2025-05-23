@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami | YOIS Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+              <li>
+                <a href="account.html" class="account">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="31"
+                    height="31"
+                    fill="currentColor"
+                    class="bi bi-person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                    />
+                  </svg>
+                  <span class="account-text">Account</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="0.25"
+              class="bi bi-bag"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Papan Kontak -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Hubungi Kami</h1>
+        <p>
+          Tim kami siap membantu Anda dengan segala pertanyaan atau kebutuhan
+          tentang produk YOI Store
+        </p>
+      </div>
+    </section>
+
+    <!-- Informasi Kontak -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Informasi Kontak</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Alamat Kami</h3>
+            <p>
+              Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten
+              Sleman, Daerah Istimewa Yogyakarta
+            </p>
+            <p>Indonesia</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Telepon</h3>
+            <p>+62 899 1234 5678</p>
+            <p>+62 899 9999 9999</p>
+            <p>Sabtu - Kamis: 9:00 - 21:00</p>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@yoistore.com">info@yoistore.com</a></p>
+            <p><a href="mailto:cs@yoistore.com">cs@yoistore.com</a></p>
+            <p>Respon dalam 24 jam</p>
+          </div>
+        </div>
+
+        <div class="section-title">
+          <h2>Kirim Pesan</h2>
+          <p style="max-width: 600px; margin: 20px auto 0; color: #666">
+            Isi formulir berikut dan tim kami akan segera menghubungi Anda
+          </p>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" class="form-control" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" class="form-control" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan Anda</label>
+            <textarea id="message" class="form-control" required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Maps Lokasi -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Lokasi Kami</h2>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2818403508622!2d110.40647117481815!3d-7.7599048922591845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversitas%20Amikom%20Yogyakarta!5e0!3m2!1sid!2sid!4v1747362062786!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo-white.png" alt="YOI Store" />
+            <p>
+              Menghadirkan solusi olahraga yang elegan, fungsional, dan ekonomis
+              bagi setiap kalangan.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Tautan Cepat</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Ikuti Kami</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2023 YOI Store. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

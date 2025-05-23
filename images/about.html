@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang Kami | YOIS Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+              <li>
+                <a href="account.html" class="account">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="31"
+                    height="31"
+                    fill="currentColor"
+                    class="bi bi-person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                    />
+                  </svg>
+                  <span class="account-text">Account</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="0.25"
+              class="bi bi-bag"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Papan Tentang Kami -->
+    <section class="about-hero">
+      <div class="container">
+        <h1>Tentang YOI Store</h1>
+        <p style="color: rgb(154, 154, 154)">
+          Menghadirkan gaya hidup aktif dengan produk berkualitas sejak 2015
+        </p>
+      </div>
+    </section>
+
+    <!-- Cerita Kami -->
+    <section class="section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Cerita Kami</h3>
+            <p>
+              YOI Store didirikan pada tahun 2023 dengan misi sederhana:
+              menyediakan peralatan olahraga dan pakaian berkualitas tinggi
+              dengan harga yang terjangkau. Apa yang dimulai sebagai toko kecil
+              di Daerah Istimewa Yogyakarta kini telah berkembang menjadi
+              destinasi utama bagi para pecinta gaya hidup sehat di seluruh
+              Indonesia.
+            </p>
+            <p>
+              Kami percaya bahwa olahraga seharusnya bisa dinikmati oleh semua
+              orang, tanpa terkecuali. Itulah mengapa kami berkomitmen untuk
+              menawarkan produk-produk yang tidak hanya fungsional tetapi juga
+              stylish, sehingga Anda bisa merasa percaya diri baik di dalam
+              maupun di luar gym.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="images/about-story.jpg" alt="Sejarah YOI Store" />
+          </div>
+        </div>
+
+        <!-- Visi Misi -->
+        <div class="mv-container">
+          <div class="mv-card">
+            <h3><i class="fas fa-bullseye"></i> Misi Kami</h3>
+            <p>
+              Memberikan produk olahraga berkualitas tinggi dengan harga
+              terjangkau, mendorong lebih banyak orang untuk menjalani gaya
+              hidup aktif dan sehat melalui peralatan yang nyaman, fungsional,
+              dan stylish.
+            </p>
+          </div>
+          <div class="mv-card">
+            <h3><i class="fas fa-eye"></i> Visi Kami</h3>
+            <p>
+              Menjadi retailer peralatan olahraga terdepan di Indonesia yang
+              dikenal karena kualitas produk, pelayanan pelanggan yang luar
+              biasa, dan komitmen terhadap komunitas fitness lokal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nilai Toko -->
+    <section class="section values-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nilai-Nilai Kami</h2>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h4>Passion</h4>
+            <p>
+              Kami mencintai apa yang kami lakukan dan itu terlihat dari setiap
+              produk yang kami tawarkan.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Kualitas</h4>
+            <p>
+              Setiap produk melalui proses seleksi ketat untuk memastikan
+              standar kualitas tertinggi.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Komunitas</h4>
+            <p>
+              Kami percaya pada kekuatan komunitas untuk menginspirasi perubahan
+              positif.
+            </p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4>Inovasi</h4>
+            <p>
+              Terus mencari cara kreatif untuk meningkatkan produk dan layanan
+              kami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tim Kami -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tim Kami</h2>
+        </div>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 50px">
+          Di balik YOI Store ada tim yang penuh semangat yang berdedikasi untuk
+          memberikan pengalaman belanja terbaik bagi Anda.
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img
+              src="images/team1.jpg"
+              alt="Ghulam Nafis Muyassar"
+              class="team-img"
+            />
+            <h4>Ghulam Nafis Muyassar</h4>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="images/team2.jpg"
+              alt="Daffa Widyanto Ramadhan"
+              class="team-img"
+            />
+            <h4>Daffa Widyanto Ramadhan</h4>
+            <p>Chief Marketing Officer</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="images/team3.jpg"
+              alt="Muhammad Ihsan Nurhuda"
+              class="team-img"
+            />
+            <h4>Muhammad Ihsan Nurhuda</h4>
+            <p>Head of Product</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="images/team4.jpg"
+              alt="Fahri Danuarta Wardani"
+              class="team-img"
+            />
+            <h4>Fahri Danuarta Wardani</h4>
+            <p>Finance Manager</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="images/team4.jpg"
+              alt="Rindang Naufal Aganta"
+              class="team-img"
+            />
+            <h4>Rindang Naufal Aganta</h4>
+            <p>Customer Service</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo-white.png" alt="YOI Store" />
+            <p>
+              Menghadirkan solusi olahraga yang elegan, fungsional, dan ekonomis
+              bagi setiap kalangan.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Tautan Cepat</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Ikuti Kami</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2023 YOI Store. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

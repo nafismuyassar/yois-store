@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semua Produk | YOIS Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="logo" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+              <li>
+                <a href="account.html" class="account">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="31"
+                    height="31"
+                    fill="currentColor"
+                    class="bi bi-person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+                    />
+                  </svg>
+                  <span class="account-text">Account</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="cart.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="0.25"
+              class="bi bi-bag"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+              />
+            </svg>
+          </a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Semua Produk -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Semua Produk</h2>
+        <select id="sortFilter">
+          <option value="default">Urutkan Default</option>
+          <option value="termurah">Termurah</option>
+          <option value="termahal">Termahal</option>
+          <option value="terlaris">Terlaris</option>
+        </select>
+      </div>
+      <div class="product-list">
+        <div class="row">
+          <div class="col-4" data-price="3700000" data-sales="50">
+            <a href="product_details.html"
+              ><img src="images/produk/salomon.png"
+            /></a>
+            <h4>Salomon XT-6</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>3.700.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="2800000" data-sales="60">
+            <a href="product_details.html"
+              ><img src="images/produk/adidas-predator.png"
+            /></a>
+            <h4>Adidas Predator</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>2.800.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="2500000" data-sales="45">
+            <a href="product_details.html"
+              ><img src="images/produk/nike-.png"
+            /></a>
+            <h4>NIKE Air VaporMax 2019</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>2.500.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="3000000" data-sales="55">
+            <a href="product_details.html"
+              ><img src="images/produk/adidas-.png"
+            /></a>
+            <h4>Adidas Adizero Evo SL</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>3.000.000 IDR</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" data-price="3500000" data-sales="30">
+            <a href="product_details.html"
+              ><img src="images/produk/jersey-miami.webp"
+            /></a>
+            <h4>Inter Miami Home</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>3.500.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="800000" data-sales="25">
+            <a href="product_details.html"
+              ><img src="images/produk/jaket-asics.webp"
+            /></a>
+            <h4>Asics Icon Jacket</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>800.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="350000" data-sales="20">
+            <a href="product_details.html"
+              ><img src="images/produk/adidas-s.webp"
+            /></a>
+            <h4>Adidas Reversible Jersey</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>350.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="250000" data-sales="35">
+            <a href="product_details.html"
+              ><img src="images/produk/kaos-skechers-grey.webp"
+            /></a>
+            <h4>Skechers T-Shirt Grey</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>250.000 IDR</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4" data-price="43000000" data-sales="40">
+            <a href="product_details.html"
+              ><img src="images/produk/jam-tangan.jpg"
+            /></a>
+            <h4>COROS Pace 3 GPS</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>4.300.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="400000" data-sales="50">
+            <a href="product_details.html"
+              ><img src="images/produk//celana-set-rebook.webp"
+            /></a>
+            <h4>Reebok Balveer Performance</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>400.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="350000" data-sales="30">
+            <a href="product_details.html"
+              ><img src="images/produk/celana-sport-m.webp"
+            /></a>
+            <h4>Skechers Men Jogger Pants</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>350.000 IDR</p>
+          </div>
+          <div class="col-4" data-price="180000" data-sales="60">
+            <a href="product_details.html"
+              ><img src="images/produk/kaos-skechers-komb.webp"
+            /></a>
+            <h4>Skechers Men Sport T-Shirt</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>180.000 IDR</p>
+          </div>
+        </div>
+      </div>
+      <div class="page-btn" id="pagination"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="images/logo-white.png" alt="YOI Store" />
+            <p>
+              Menghadirkan solusi olahraga yang elegan, fungsional, dan ekonomis
+              bagi setiap kalangan.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Tautan Cepat</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Produk</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Ikuti Kami</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">© 2023 YOI Store. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
