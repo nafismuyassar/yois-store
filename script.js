@@ -191,3 +191,59 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+/* Form Validation and Transition */
+document.addEventListener('DOMContentLoaded', function() {
+    const transitionLinks = document.querySelectorAll('a[href="login.html"], a[href="register.html"]');
+    transitionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const formContainer = document.querySelector('.form-container');
+            if (formContainer) {
+                formContainer.classList.add('slide-out');
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 400);
+            } else {
+                window.location.href = link.href;
+            }
+        });
+    });
+
+    // Login Form
+    var loginForm = document.getElementById('LoginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var username = loginForm.querySelector('input[type="text"]').value;
+            var password = loginForm.querySelector('input[type="password"]').value;
+            
+            if (username === '' || password === '') {
+                alert('Harap isi semua kolom!');
+            } else {
+                alert('Login berhasil! (Ini adalah simulasi)');
+                // Tambahkan logika login di sini (misalnya, kirim ke server)
+            }
+        });
+    }
+
+    // Register Form
+    var regForm = document.getElementById('RegForm');
+    if (regForm) {
+        regForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var username = regForm.querySelector('input[type="text"]').value;
+            var email = regForm.querySelector('input[type="email"]').value;
+            var password = regForm.querySelector('input[type="password"]').value;
+            
+            if (username === '' || email === '' || password === '') {
+                alert('Harap isi semua kolom!');
+            } else if (!email.includes('@')) {
+                alert('Email tidak valid!');
+            } else {
+                alert('Registrasi berhasil! (Ini adalah simulasi)');
+                // Tambahkan logika registrasi di sini (misalnya, kirim ke server)
+            }
+        });
+    }
+});

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akun | YOIS Store</title>
+    <title>Login | YOIS Store</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <!-- Halaman Akun -->
+    <!-- Halaman Login -->
     <div class="account-page">
       <div class="container">
         <div class="row">
@@ -95,23 +95,15 @@
           </div>
           <div class="col-2">
             <div class="form-container">
-              <div class="form-btn">
-                <span onclick="login()">Login</span>
-                <span onclick="register()">Register</span>
-                <hr id="Indicator" />
-              </div>
+              <h2 class="title">Login</h2>
               <form id="LoginForm">
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
+                <input type="text" placeholder="Username" required />
+                <input type="password" placeholder="Password" required />
                 <button type="submit" class="btn">Login</button>
-                <a href="">Forget Password</a>
-              </form>
-
-              <form id="RegForm">
-                <input type="text" placeholder="Username" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button type="submit" class="btn">Register</button>
+                <a href="#">Lupa Password?</a>
+                <p>
+                  Belum punya akun? <a href="register.html">Daftar sekarang</a>
+                </p>
               </form>
             </div>
           </div>
@@ -149,7 +141,7 @@
             </ul>
           </div>
         </div>
-        <div class="copyright">&copy; 2023 YOI Store. All Rights Reserved.</div>
+        <div class="copyright">© 2023 YOI Store. All Rights Reserved.</div>
       </div>
     </footer>
 
